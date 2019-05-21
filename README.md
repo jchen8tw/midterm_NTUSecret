@@ -34,7 +34,7 @@ note: you will need a .env file in both your project root folder and client/fold
 ```
 PORT=8080
 SKIP_PREFLIGHT_CHECK=true
-SALT=VsEBawiDiEsBJ9D3
+SALT=your secret word
 RECAPTCHA_SEC= your recaptcha server key
 FACEBOOK_TOKEN= your facebook page api token
 KEYWORD=["韓流","打字","有興趣了解加","兼職正妹","lineid","新平台","被動收入"]
