@@ -1,0 +1,23 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "firebase-admin": "^7.3.0",
+    "keyword-filter": "^1.0.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.18.11",
+    "sha.js": "^2.4.11",
+    "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  }
+}
