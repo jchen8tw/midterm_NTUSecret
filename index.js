@@ -36,7 +36,8 @@ const facebooktoken = process.env.FACEBOOK_TOKEN
 let Authtoks = {}
 //input message output a promise resolves message messageid
 const newpost_facebookapi = async (message) => {
-    filter.replaceKeywords(message,'(っ・Д・)っ');
+    message = decodeURI(message);
+    message = filter.replaceKeywords(message,'(っ・Д・)っ');
     let res = await fetch('https://graph.facebook.com/v3.3/358964794749086/feed?access_token=' + facebooktoken + '&message=' + message ,{method: 'POST'})
     res = await res.json();
     return {cont: message, id : res.id}
@@ -49,7 +50,7 @@ const delete_facebookapi = async (id) =>{
     return res.success;
 }
 const edit_facebookapi  = async (id,message) =>{
-    filter.replaceKeywords(message,'(っ・Д・)っ')
+    message = filter.replaceKeywords(message,'(っ・Д・)っ')
     let res = await fetch('https://graph.facebook.com/v3.3/' + id +'?access_token=' + facebooktoken + '&message='+ encodeURI(message),{method: 'POST'})
     res = await res.json();
     return res.success;
