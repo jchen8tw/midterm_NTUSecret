@@ -1,6 +1,6 @@
 # NTU Secret
-###Inspired by HKUST Secrets
-###A true open-source and anonymous facebook page app
+### Inspired by HKUST Secrets
+### A true open-source and anonymous facebook page app
 Demo: https://ntuhate-2df40.appspot.com/
 
 facebook page: https://www.facebook.com/NTU-Secrets-358964794749086/
